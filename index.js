@@ -2,8 +2,6 @@ let counter = document.querySelector(".counter");
 let minus = document.querySelector(".minus");
 let plus = document.querySelector(".plus");
 let reset = document.querySelector(".reset");
-let li = document.createElement("li");
-let menu = document.querySelector("#menu");
 let h2 = document.querySelector("h2");
 let savedBtn = document.querySelector(".saved-btn");
 
