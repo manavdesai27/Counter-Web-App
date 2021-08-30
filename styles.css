@@ -1,0 +1,166 @@
+body {
+    background-color: #101820FF;
+    color: #FEE715FF;
+    height: 100vh;
+    font-family: "Oxygen", "Poppins", sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 500%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 100vh; */
+}
+
+.interior {
+    width: 20%;
+    box-shadow: 0px 0px 20px yellow;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.interior:hover {
+    background-color: #FEE715FF;
+    color: #101820FF;
+    transform: scale(1.3);
+    box-shadow: 0px 0px 20px purple;
+    cursor: pointer;
+}
+
+.saved {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.counter {
+    font-size: 500%;
+    transition: 0.2s;
+}
+
+.counter:hover {
+    transform: scale(2);
+}
+
+.counter:active {
+    transform: scale(1);
+}
+
+button {
+   
+    border-style: none;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px purple;
+    margin: 0 20px 15px;
+    font-weight: bold;
+}
+
+
+.plus {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    color: #101820FF;
+    border: 2px solid #4CAF50;
+    transition: 0.3s;
+}
+
+
+.plus:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.plus:active {
+    transform: scale(1.4);
+}
+
+.minus {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    color: #101820FF;
+    border: 2px solid #f44336;
+    transition: 0.3s;
+}
+
+
+.minus:hover {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.minus:active {
+    transform: scale(1.4);
+}
+
+.negative {
+    color: red;
+}
+
+.positive {
+    color: green;
+}
+
+.reset {
+    border-radius: 10%;
+    background-color: white;
+    color: #101820FF;
+    border: 2px solid #101820FF;
+    transition: 0.3s;
+}
+
+.reset:hover {
+    background-color: #101820FF;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.reset:active {
+    transform: scale(1.4);
+}
+
+ul#menu li {
+    display: inline;
+} 
+
+h2 {
+    display: inline;
+}
+
+.saved-btn {
+    border-radius: 5px;
+    background: inherit;
+    box-shadow: 0px 0px 10px #FEE715FF;
+}
+
+.saved-btn:hover h2 {
+    display: none;
+}
+
+.saved-btn:hover::before{
+    content: "Click to reset saved counts";
+}
+
+.saved-btn:hover{
+    cursor: pointer;
+}
+
+.saved-btn:active {
+    transform: scale(1.1);
+}
